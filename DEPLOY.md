@@ -94,7 +94,7 @@ En la pestaña **General** del servicio:
 |-------|-------|
 | **Host** | `abadgroup.tech` |
 | **Service Name** | `portafolio` *(debe coincidir con el nombre en docker-compose.yml)* |
-| **Port** | `3000` |
+| **Port** | `3011` |
 | **HTTPS** | ✅ Activado (Let's Encrypt) |
 | **www redirect** | ✅ Activado (opcional) |
 
