@@ -37,20 +37,13 @@ export default function About() {
                   backgroundSize: "24px 24px",
                 }}
               />
-              {/* Center initials */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-                <div className="w-36 h-36 rounded-full bg-white/10 border-2 border-[#C9A844]/50 flex items-center justify-center">
-                  <span className="text-5xl font-bold text-white/80">JA</span>
-                </div>
-                <div className="text-center">
-                  <p className="text-white/90 font-semibold text-lg">
-                    Johann Abad
-                  </p>
-                  <p className="text-[#C9A844] text-sm mt-1">
-                    Full Stack & AI Engineer
-                  </p>
-                </div>
-              </div>
+              {/* Real photo from stock */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop"
+                alt="About Johann Abad"
+                className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-90"
+              />
               {/* Bottom bar */}
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#C9A844] to-[#F0D080]" />
             </div>

@@ -159,17 +159,13 @@ export default function Hero() {
                     backgroundSize: "30px 30px",
                   }}
                 />
-                {/* Initials placeholder (replace with real photo) */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <div className="w-40 h-40 rounded-full border-4 border-[#C9A844]/40 bg-white/10 flex items-center justify-center backdrop-blur-sm mb-6">
-                    <span className="text-6xl font-bold text-white/80">
-                      JA
-                    </span>
-                  </div>
-                  <p className="text-white/60 text-sm">
-                    Full Stack & AI Engineer
-                  </p>
-                </div>
+                {/* Real photo from stock */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop"
+                  alt="Johann Abad - Full Stack Engineer"
+                  className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-90"
+                />
                 {/* Gold accent strip */}
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#C9A844] to-[#F0D080]" />
               </div>

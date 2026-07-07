@@ -29,7 +29,7 @@ export default function FloatingCTA() {
     <>
       {/* WhatsApp floating button */}
       <a
-        href={`https://wa.me/573000000000?text=${whatsappMsg}`}
+        href={`https://wa.me/970435903?text=${whatsappMsg}`}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp"
