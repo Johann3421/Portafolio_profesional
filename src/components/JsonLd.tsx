@@ -3,7 +3,7 @@
  * Implements Person, WebSite, and Service schemas from schema.org.
  */
 export default function JsonLd() {
-  const BASE = "https://abadgroup.tech";
+  const BASE = "https://portafolio.abadgroup.tech";
 
   const person = {
     "@context": "https://schema.org",
@@ -29,20 +29,60 @@ export default function JsonLd() {
     ],
     sameAs: [
       "https://linkedin.com/in/johannabad",
-      "https://github.com/johannabad",
-      "https://twitter.com/johannabad",
+      "https://github.com/Johann3421",
     ],
     address: {
       "@type": "PostalAddress",
-      addressCountry: "CO",
-      addressRegion: "Colombia",
+      addressLocality: "Lima",
+      addressRegion: "Lima",
+      addressCountry: "PE",
     },
     contactPoint: {
       "@type": "ContactPoint",
+      telephone: "+51-970-435-903",
       email: "contact@abadgroup.tech",
       contactType: "customer service",
       availableLanguage: ["Spanish", "English"],
     },
+  };
+
+  const localBusiness = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: "Johann Abad — Desarrollo de Software & IA",
+    url: BASE,
+    image: `${BASE}/og-image.png`,
+    telephone: "+51-970-435-903",
+    email: "contact@abadgroup.tech",
+    description:
+      "Desarrollo de software a medida, aplicaciones web y móviles, inteligencia artificial y consultoría tecnológica en Lima, Perú.",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Lima",
+      addressRegion: "Lima",
+      addressCountry: "PE",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: -12.0464,
+      longitude: -77.0428,
+    },
+    areaServed: [
+      { "@type": "City", name: "Lima" },
+      { "@type": "Country", name: "Perú" },
+      { "@type": "Country", name: "Colombia" },
+    ],
+    priceRange: "$$",
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "18:00",
+    },
+    sameAs: [
+      "https://linkedin.com/in/johannabad",
+      "https://github.com/Johann3421",
+    ],
   };
 
   const website = {
@@ -72,10 +112,10 @@ export default function JsonLd() {
     serviceType: "Software Development",
     description:
       "Servicios de desarrollo full stack, aplicaciones móviles, inteligencia artificial, cloud/DevOps, arquitectura de sistemas y consultoría tecnológica.",
-    areaServed: {
-      "@type": "Country",
-      name: "Colombia",
-    },
+    areaServed: [
+      { "@type": "City", name: "Lima" },
+      { "@type": "Country", name: "Perú" },
+    ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Servicios de Software",
@@ -156,6 +196,10 @@ export default function JsonLd() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusiness) }}
       />
       <script
         type="application/ld+json"

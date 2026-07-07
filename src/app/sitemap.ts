@@ -1,8 +1,17 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const BASE = "https://abadgroup.tech";
+  const BASE = "https://portafolio.abadgroup.tech";
   const now = new Date();
+
+  const demos = [
+    "whatsapp",
+    "ai-chat",
+    "analytics",
+    "automation",
+    "crm",
+    "ecommerce",
+  ];
 
   return [
     {
@@ -18,28 +27,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     },
     {
-      url: `${BASE}/#about`,
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${BASE}/#services`,
+      url: `${BASE}/demos`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.9,
     },
-    {
-      url: `${BASE}/#projects`,
+    ...demos.map((slug) => ({
+      url: `${BASE}/demos/${slug}`,
       lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${BASE}/#contact`,
-      lastModified: now,
-      changeFrequency: "yearly",
+      changeFrequency: "monthly" as const,
       priority: 0.7,
-    },
+    })),
   ];
 }

@@ -9,7 +9,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const BASE_URL = "https://abadgroup.tech";
+const BASE_URL = "https://portafolio.abadgroup.tech";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -18,23 +18,24 @@ export const metadata: Metadata = {
     template: "%s | Johann Abad",
   },
   description:
-    "Johann Abad — Desarrollador Full Stack e Ingeniero de Software con IA. Construyo plataformas web, apps móviles y sistemas con inteligencia artificial para empresas e instituciones. Más de 50 proyectos entregados. Colombia / Remoto.",
+    "Johann Abad — Desarrollador Full Stack e Ingeniero de Software con IA en Lima, Perú. Construyo plataformas web, apps móviles y sistemas con inteligencia artificial para empresas e instituciones. Más de 50 proyectos entregados.",
   keywords: [
-    "Desarrollador Full Stack Colombia",
-    "Ingeniero de Software con IA",
+    "Desarrollador Full Stack Perú",
+    "Desarrollador web Lima",
+    "Ingeniero de Software con IA Perú",
     "Johann Abad",
+    "programador Lima",
+    "desarrollo web empresarial Lima",
+    "chatbot IA empresas Perú",
+    "software a medida Lima",
+    "consultoría tecnológica Perú",
     "Next.js developer",
     "React developer",
-    "Node.js",
-    "FastAPI",
-    "chatbot IA empresas",
-    "desarrollo web empresarial",
-    "consultoría tecnológica Colombia",
-    "abadgroup.tech",
     "Full Stack Developer remote",
     "AI Engineer freelance",
     "LangChain developer",
-    "software para empresas",
+    "aplicaciones móviles Lima",
+    "automatización con IA Perú",
   ],
   authors: [{ name: "Johann Abad", url: BASE_URL }],
   creator: "Johann Abad",
@@ -84,9 +85,8 @@ export const metadata: Metadata = {
       "Construyo soluciones digitales con IA para empresas e instituciones. 50+ proyectos entregados.",
     images: [`${BASE_URL}/og-image.png`],
   },
-  verification: {
-    google: "REPLACE_WITH_GOOGLE_VERIFICATION_CODE",
-  },
+  // ponytail: add google verification code when Search Console is set up
+  // verification: { google: "YOUR_CODE" },
   category: "technology",
 };
 

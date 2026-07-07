@@ -139,7 +139,7 @@ const translations: Record<Locale, Record<string, string>> = {
     "contact.sending": "Enviando...",
     "contact.success": "¡Mensaje enviado! Te responderé pronto.",
     "contact.info_title": "Información de contacto",
-    "contact.location": "Colombia / Remoto",
+    "contact.location": "Lima, Perú / Remoto",
     "contact.response": "Respondo en menos de 24 horas",
 
     // Footer
@@ -266,7 +266,7 @@ const translations: Record<Locale, Record<string, string>> = {
     "contact.sending": "Sending...",
     "contact.success": "Message sent! I'll get back to you soon.",
     "contact.info_title": "Contact information",
-    "contact.location": "Colombia / Remote",
+    "contact.location": "Lima, Peru / Remote",
     "contact.response": "I respond in less than 24 hours",
 
     "footer.rights": "All rights reserved.",

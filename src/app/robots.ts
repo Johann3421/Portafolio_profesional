@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://abadgroup.tech/sitemap.xml",
-    host: "https://abadgroup.tech",
+    sitemap: "https://portafolio.abadgroup.tech/sitemap.xml",
+    host: "https://portafolio.abadgroup.tech",
   };
 }

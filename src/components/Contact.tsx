@@ -32,13 +32,27 @@ export default function Contact() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
+  // ponytail: replace YOUR_FORM_ID with a real Formspree form ID from https://formspree.io/forms
+  const FORMSPREE_ID = "YOUR_FORM_ID";
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("sending");
-    // Simulate sending — replace with actual API call
-    await new Promise((r) => setTimeout(r, 1200));
-    setStatus("done");
-    setForm({ name: "", email: "", company: "", message: "" });
+    try {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        setStatus("done");
+        setForm({ name: "", email: "", company: "", message: "" });
+      } else {
+        setStatus("idle");
+      }
+    } catch {
+      setStatus("idle");
+    }
   };
 
   const inputClass =
